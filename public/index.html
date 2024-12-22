@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client</title>
+</head>
+
+<body>
+    <h1>Client</h1>
+    <p>ID=<span id="id"></span></p>
+
+    <h2>User: <span id="username">Anonymous</span></h2>
+    <input id="username-input" type="text" placeholder="Anonymous">
+    <button id="update-btn">Update</button>
+
+    <h2>Audio: <span id="audio-name">??</span></h2>
+    <audio id="client-audio" preload="auto" controls></audio>
+    <button id="ready-btn" disabled=true>Ready</button>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="module" src="client.js"></script>
+</body>
+
+</html>
